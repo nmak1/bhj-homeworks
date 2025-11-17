@@ -11,7 +11,7 @@ class Game {
 
         this.registerEvents();
         this.setNewWord();
-        this.updateStatus();
+        this.updateStatus(); // Инициализируем отображение статуса
     }
 
     registerEvents() {
@@ -52,6 +52,7 @@ class Game {
             return;
         }
         this.setNewWord();
+        this.updateStatus(); // Обновляем статус после успешного ввода
     }
 
     fail() {
@@ -62,6 +63,7 @@ class Game {
             return;
         }
         this.setNewWord();
+        this.updateStatus(); // Обновляем статус после ошибки
     }
 
     reset() {
